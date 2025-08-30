@@ -4,15 +4,15 @@ In a college class, managing student leave requests is a challenge. Currently, s
 
 There is a need for a console-based Student Leave Management System (SLMS) where:
 
-The class teacher maintains a database of students.
+1. The class teacher maintains a database of students.
 
-Students can log in and submit leave requests with reason, start date, and number of days.
+2. Students can log in and submit leave requests with reason, start date, and number of days.
 
-Teacher can view all pending leave requests in one place, approve/reject them, and the decision is updated in the database.
+3. Teacher can view all pending leave requests in one place, approve/reject them, and the decision is updated in the database.
 
-The system automatically tracks how many leave days each student has taken.
+4. The system automatically tracks how many leave days each student has taken.
 
-Students can view the status of their requests (Approved/Rejected/Pending).
+5. Students can view the status of their requests (Approved/Rejected/Pending).
 
 This reduces paperwork, improves transparency, and saves time.
 
