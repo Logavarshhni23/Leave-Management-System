@@ -40,7 +40,7 @@ Features:
 
     * View total leaves taken.
 
-Database Tables (simplified)
+Database Tables 
 
  * Students
 
