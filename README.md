@@ -1,4 +1,4 @@
-📌 Problem Statement
+📌 PROBLEM STATEMENT :
 
 In a college class, managing student leave requests is a challenge. Currently, students have to submit handwritten leave letters to their class teacher, which are hard to track, easy to lose, and difficult to maintain for future reference. Teachers also find it time-consuming to review leave requests, approve/reject them, and calculate the number of leave days taken by each student.
 
@@ -16,7 +16,7 @@ There is a need for a console-based Student Leave Management System (SLMS) where
 
 This reduces paperwork, improves transparency, and saves time.
 
-📌 Proposed Solution
+📌 PROPOSED SOLUTION :
 
 The system will be a Java console application with JDBC + SQL database integration.
 
@@ -40,17 +40,7 @@ Features:
 
     * View total leaves taken.
 
-Database Tables 
-
- * Students
-
-    StudentID, Name, Password, TotalLeaves
-
- * LeaveRequests
-
-    RequestID, StudentID, Reason, Days, Status (Pending/Approved/Rejected)
-
-Workflow:
+WORKFLOW : 
 
 * Teacher creates student accounts.
 
@@ -60,7 +50,7 @@ Workflow:
 
 * System updates leave counts and notifies student.
 
-📌 Java OOP Concepts Used
+📌 JAVA OOPS CONCEPT USED :
 
 ✅ Encapsulation
 
@@ -94,7 +84,7 @@ Example: When a teacher logs in, they see pending requests; when a student logs 
 
 * A Student can have many LeaveRequests.
 
-🛠 Tech Stack:
+🛠 TECH STACK :
 
  1. Java → To write the program (console app).
 
