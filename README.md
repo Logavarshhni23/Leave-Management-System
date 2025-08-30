@@ -24,21 +24,21 @@ Features:
 
 * Teacher Login
 
-    *Add students to the class database.
+    * Add students to the class database.
 
-    *View all pending leave requests.
+    * View all pending leave requests.
 
-    *Approve/Reject requests.
+    * Approve/Reject requests.
 
-    *View student leave history and total leave count.
+    * View student leave history and total leave count.
 
 * Student Login
 
-    *Submit new leave request (reason + date + number of days).
+    * Submit new leave request (reason + date + number of days).
 
-    *View leave request status (pending, approved, rejected).
+    * View leave request status (pending, approved, rejected).
 
-    *View total leaves taken.
+    * View total leaves taken.
 
 Database Tables (simplified)
 
@@ -52,13 +52,13 @@ Database Tables (simplified)
 
 Workflow:
 
-*Teacher creates student accounts.
+* Teacher creates student accounts.
 
-*Student logs in and submits leave request.
+* Student logs in and submits leave request.
 
-*Teacher logs in → sees pending requests → approves/rejects.
+* Teacher logs in → sees pending requests → approves/rejects.
 
-*System updates leave counts and notifies student.
+* System updates leave counts and notifies student.
 
 📌 Java OOP Concepts Used
 
@@ -84,15 +84,15 @@ Example: When a teacher logs in, they see pending requests; when a student logs 
 
 ✅ Abstraction
 
-Interfaces like LeaveActions for methods: applyLeave(), approveLeave(), rejectLeave().
+* Interfaces like LeaveActions for methods: applyLeave(), approveLeave(), rejectLeave().
 
-Hides implementation details, shows only necessary operations.
+* Hides implementation details, shows only necessary operations.
 
 ✅ Association / Aggregation
 
-A Teacher is associated with many Students.
+* A Teacher is associated with many Students.
 
-A Student can have many LeaveRequests.
+* A Student can have many LeaveRequests.
 
 
 AUTHOR
