@@ -94,8 +94,20 @@ Example: When a teacher logs in, they see pending requests; when a student logs 
 
 * A Student can have many LeaveRequests.
 
+🛠 Tech Stack:
 
-AUTHOR
+ 1. Java → To write the program (console app).
+
+ 2. SQL Database (like MySQL or SQLite) → To store students, teachers, and leave requests.
+
+ 3. JDBC → A bridge that connects Java and SQL.
+
+ 4. IDE (like IntelliJ, Eclipse, or VS Code) → To write and run the code.
+
+ 5. Git → To save versions of your project.
+
+    
+Author
 
 Name:Logavarshhni.S
 
