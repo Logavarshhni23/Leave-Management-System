@@ -22,43 +22,43 @@ The system will be a Java console application with JDBC + SQL database integrati
 
 Features:
 
-Teacher Login
+* Teacher Login
 
-Add students to the class database.
+    *Add students to the class database.
 
-View all pending leave requests.
+    *View all pending leave requests.
 
-Approve/Reject requests.
+    *Approve/Reject requests.
 
-View student leave history and total leave count.
+    *View student leave history and total leave count.
 
-Student Login
+* Student Login
 
-Submit new leave request (reason + date + number of days).
+    *Submit new leave request (reason + date + number of days).
 
-View leave request status (pending, approved, rejected).
+    *View leave request status (pending, approved, rejected).
 
-View total leaves taken.
+    *View total leaves taken.
 
 Database Tables (simplified)
 
-Students
+ *Students
 
-StudentID, Name, Password, TotalLeaves
+    StudentID, Name, Password, TotalLeaves
 
-LeaveRequests
+ *LeaveRequests
 
-RequestID, StudentID, Reason, Days, Status (Pending/Approved/Rejected)
+    RequestID, StudentID, Reason, Days, Status (Pending/Approved/Rejected)
 
 Workflow:
 
-Teacher creates student accounts.
+*Teacher creates student accounts.
 
-Student logs in and submits leave request.
+*Student logs in and submits leave request.
 
-Teacher logs in → sees pending requests → approves/rejects.
+*Teacher logs in → sees pending requests → approves/rejects.
 
-System updates leave counts and notifies student.
+*System updates leave counts and notifies student.
 
 📌 Java OOP Concepts Used
 
@@ -94,37 +94,7 @@ A Teacher is associated with many Students.
 
 A Student can have many LeaveRequests.
 
-📌 UML Diagram (Text Form)
-            +----------------+
-            |     User       |
-            +----------------+
-            | - userID       |
-            | - name         |
-            | - password     |
-            +----------------+
-            | + login()      |
-            +----------------+
-               ^        ^
-               |        |
-     +---------+        +----------+
-     |                             |
-+------------+             +---------------+
-|  Student   |             |   Teacher     |
-+------------+             +---------------+
-| - totalLeaves            |               |
-+------------+             +---------------+
-| + applyLeave()           | + approveLeave()|
-| + viewStatus()           | + rejectLeave() |
-+------------+             +---------------+
 
-         +----------------------+
-         |    LeaveRequest      |
-         +----------------------+
-         | - requestID          |
-         | - studentID          |
-         | - reason             |
-         | - days               |
-         | - status             |
-         +----------------------+
-         | + getDetails()       |
-         +----------------------+
+AUTHOR
+Name:Logavarshhni S
+gmail:logavarshhnis2007@gmail.com
