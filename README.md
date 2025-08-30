@@ -42,11 +42,11 @@ Features:
 
 Database Tables (simplified)
 
- *Students
+ * Students
 
     StudentID, Name, Password, TotalLeaves
 
- *LeaveRequests
+ * LeaveRequests
 
     RequestID, StudentID, Reason, Days, Status (Pending/Approved/Rejected)
 
@@ -96,5 +96,7 @@ Example: When a teacher logs in, they see pending requests; when a student logs 
 
 
 AUTHOR
-Name:Logavarshhni S
-gmail:logavarshhnis2007@gmail.com
+
+Name:Logavarshhni.S
+
+gmail:logavarshhni.s2024@sece.ac.in
