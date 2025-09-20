@@ -1,21 +1,21 @@
 package model;
-public class user {
+
+public abstract class user {
     protected String username;
     protected String password;
 
-    public User(String username,String password)
-    {
-        this.username=username;
-        this.password=password;
+    public user(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
 
-    public String getUsername()
-    {
+    public String getUsername() {
         return this.username;
     }
-    public String getPassword()
-    {
+
+    public String getPassword() {
         return this.password;
     }
 
+    public abstract void login();
 }

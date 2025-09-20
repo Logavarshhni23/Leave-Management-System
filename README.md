@@ -14,6 +14,7 @@ Teacher Login
 - Approve/Reject requests  
 - View student leave history and total leave count  
 
+Student Login
 
 - Submit leave request (reason, start date, number of days)  
 - View request status (Pending/Approved/Rejected)  
