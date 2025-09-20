@@ -1,104 +1,55 @@
-📌 PROBLEM STATEMENT :
+📌 Problem Statement
 
-In a college class, managing student leave requests is a challenge. Currently, students have to submit handwritten leave letters to their class teacher, which are hard to track, easy to lose, and difficult to maintain for future reference. Teachers also find it time-consuming to review leave requests, approve/reject them, and calculate the number of leave days taken by each student.
+Managing student leave requests manually is inefficient and error-prone. Teachers struggle to track handwritten letters, and students lack visibility into their request status. A digital system is needed to streamline this process.
 
-There is a need for a console-based Student Leave Management System (SLMS) where:
+📌 Proposed Solution
 
-1. The class teacher maintains a database of students.
+A Java console-based Student Leave Management System (SLMS) with JDBC and SQL integration.
 
-2. Students can log in and submit leave requests with reason, start date, and number of days.
 
-3. Teacher can view all pending leave requests in one place, approve/reject them, and the decision is updated in the database.
 
-4. The system automatically tracks how many leave days each student has taken.
+Teacher Login
+- Add students to the database  
+- View and manage leave requests  
+- Approve/Reject requests  
+- View student leave history and total leave count  
 
-5. Students can view the status of their requests (Approved/Rejected/Pending).
 
-This reduces paperwork, improves transparency, and saves time.
+- Submit leave request (reason, start date, number of days)  
+- View request status (Pending/Approved/Rejected)  
+- Track total leaves taken  
 
-📌 PROPOSED SOLUTION :
+📌 Workflow
 
-The system will be a Java console application with JDBC + SQL database integration.
+1. Teacher creates student accounts  
+2. Student logs in and submits leave request  
+3. Teacher reviews and approves/rejects  
+4. System updates leave count and notifies student  
 
-Features:
 
-* Teacher Login
+📌 Java OOP Concepts Used
 
-    * Add students to the class database.
+- Encapsulation: Private fields with public getters/setters  
+- Inheritance: User base class → Student, Teacher subclasses  
+- Polymorphism: Overridden login() method  
+- Abstraction: LeaveActions interface with methods like applyLeave(), approveLeave() 
+- Association/Aggregation:  
+  - Teacher ↔ Students  
+  - Student ↔ LeaveRequests  
 
-    * View all pending leave requests.
 
-    * Approve/Reject requests.
+🛠 Tech Stack
 
-    * View student leave history and total leave count.
+- Java (console app)  
+- SQL (MySQL or SQLite)  
+- JDBC  
+- IDE: VS Code / IntelliJ / Eclipse  
+- Git for version control  
 
-* Student Login
 
-    * Submit new leave request (reason + date + number of days).
 
-    * View leave request status (pending, approved, rejected).
+👤 Author
 
-    * View total leaves taken.
+Name: Logavarshhni S  
+Email: logavarshhni.s2024@sece.ac.in  
 
-WORKFLOW : 
-
-* Teacher creates student accounts.
-
-* Student logs in and submits leave request.
-
-* Teacher logs in → sees pending requests → approves/rejects.
-
-* System updates leave counts and notifies student.
-
-📌 JAVA OOPS CONCEPT USED :
-
-✅ Encapsulation
-
-Student, Teacher, and LeaveRequest will be separate classes with private fields and public getter/setter methods.
-
-Example: LeaveRequest has private fields reason, days, status, and can be accessed only through methods.
-
-✅ Inheritance
-
-Base class: User (common attributes: username, password, role).
-
-Subclasses: Student and Teacher.
-
-This avoids duplication and improves code reusability.
-
-✅ Polymorphism
-
-Overriding: login() method works differently for Student and Teacher.
-
-Example: When a teacher logs in, they see pending requests; when a student logs in, they see their own requests.
-
-✅ Abstraction
-
-* Interfaces like LeaveActions for methods: applyLeave(), approveLeave(), rejectLeave().
-
-* Hides implementation details, shows only necessary operations.
-
-✅ Association / Aggregation
-
-* A Teacher is associated with many Students.
-
-* A Student can have many LeaveRequests.
-
-🛠 TECH STACK :
-
- 1. Java → To write the program (console app).
-
- 2. SQL Database (like MySQL or SQLite) → To store students, teachers, and leave requests.
-
- 3. JDBC → A bridge that connects Java and SQL.
-
- 4. IDE (like IntelliJ, Eclipse, or VS Code) → To write and run the code.
-
- 5. Git → To save versions of your project.
-
-    
-Author
-
-Name:Logavarshhni.S
-
-gmail:logavarshhni.s2024@sece.ac.in
