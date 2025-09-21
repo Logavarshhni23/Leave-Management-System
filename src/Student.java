@@ -25,7 +25,7 @@ public class Student extends User {
                 String from = sc.next();
                 System.out.print("To Date (YYYY-MM-DD): ");
                 String to = sc.next();
-                sc.nextLine(); // consume newline
+                sc.nextLine(); 
                 System.out.print("Reason: ");
                 String reason = sc.nextLine();
 

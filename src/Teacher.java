@@ -3,7 +3,7 @@ import java.util.*;
 public class Teacher extends User {
 
     public Teacher(String name) {
-        super(name, null); // rollNumber not needed for teacher
+        super(name, null);
     }
 
     @Override
