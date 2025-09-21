@@ -90,4 +90,26 @@ public class LeaveService {
             System.out.println("Error fetching student: " + e.getMessage());
         }
     }
+    public List<LeaveRequest> getLeaveRequestsByRoll(String roll) {
+        List<LeaveRequest> list = new ArrayList<>();
+        String query = "SELECT * FROM leave_requests WHERE rollNumber = ?";
+        try (Connection conn = DBManager.getConnection();
+            PreparedStatement stmt = conn.prepareStatement(query)) {
+            stmt.setString(1, roll);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                list.add(new LeaveRequest(
+                    rs.getString("rollNumber"),
+                    rs.getString("fromDate"),
+                    rs.getString("toDate"),
+                    rs.getString("reason"),
+                    rs.getString("status")
+                ));
+            }
+        } catch (SQLException e) {
+            System.out.println("Error fetching leave history: " + e.getMessage());
+        }
+        return list;
+    }
+
 }
