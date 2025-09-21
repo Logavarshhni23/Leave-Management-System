@@ -16,7 +16,7 @@ public class App {
         } else if (role.equals("student")) {
             System.out.print("Enter your roll number: ");
             String roll = sc.nextLine();
-            user = new Student("Student", roll); // name optional for now
+            user = new Student("Student", roll); 
         } else {
             System.out.println("Invalid role.");
             sc.close();

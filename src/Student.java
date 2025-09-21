@@ -40,7 +40,7 @@ public class Student extends User {
                     for (LeaveRequest req : requests) {
                         System.out.println(req);
                     }
-               }
+               }     
             }
             else {
                 break;
