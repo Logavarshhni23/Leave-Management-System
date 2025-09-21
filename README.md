@@ -2,7 +2,6 @@
 
 Managing student leave requests manually is inefficient and error-prone. Teachers struggle to track handwritten letters, and students lack visibility into their request status. A digital system is needed to streamline this process and ensure transparency.
 
----
 
 📌 **Proposed Solution**
 
@@ -19,7 +18,6 @@ A Java console-based Student Leave Management System (SLMS) with JDBC and SQL in
 - View request status (Pending / Approved / Rejected)  
 - Track total leaves taken  
 
----
 
 📌 **Workflow**
 
@@ -29,7 +27,6 @@ A Java console-based Student Leave Management System (SLMS) with JDBC and SQL in
 4. System updates leave count and retains request history  
 5. Student can view updated status anytime  
 
----
 
 📌 **Java OOP Concepts Used**
 
@@ -41,7 +38,6 @@ A Java console-based Student Leave Management System (SLMS) with JDBC and SQL in
   - Teacher ↔ Students  
   - Student ↔ LeaveRequests  
 
----
 
 🛠 **Tech Stack**
 
