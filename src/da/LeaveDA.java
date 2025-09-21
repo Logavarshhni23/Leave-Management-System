@@ -1,13 +1,13 @@
-package dao;
+package da;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import model.LeaveRequest;
-import util.DBManager;
+import da.DBManager;
 
-public class LeaveDAO {
+public class LeaveDA {
 
     public void insertLeaveRequest(LeaveRequest request) {
         String query = "INSERT INTO leave_requests (rollNumber, startDate, endDate, duration, reason, status) VALUES (?, ?, ?, ?, ?, ?)";
