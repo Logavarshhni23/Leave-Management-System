@@ -45,7 +45,9 @@ A Java console-based Student Leave Management System (SLMS) with JDBC and SQL in
 - SQL (MySQL database)  
 - JDBC for database connectivity  
 - IDE: VS Code   
-- Git for version control  
+- Git for version control
+
+**UML Diagram**
 
 ![UML Diagram](UML.jpeg)
 
